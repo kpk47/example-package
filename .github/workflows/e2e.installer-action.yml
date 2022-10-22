@@ -9,7 +9,7 @@ jobs:
   test-install:
     strategy:
       matrix:
-        ref: ['v1.4.0', 'e6428d7da594455a4c2b7f24907fec421a5e0e95', 'v1.4.1', 'e6428d7da594455a4c2b7f24907fec421a5e0e95']
+        ref: ['v0.0.13', 'v0.0.14', 'f41d083a3804298adc912edec200293bce37eacb', 'e130d6ed7712826d9adfcd7e6f8cdbb8fbec637a']
     runs-on: ubuntu-latest
     steps:
-      - uses: slsa-framework/slsa-verifier/actions/installer@${{ matrix.ref }}
+      - uses: kpk47/slsa-verifier/actions/installer@${{ matrix.ref }}
