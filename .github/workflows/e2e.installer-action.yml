@@ -9,12 +9,8 @@ jobs:
   test-tags:
     runs-on: ubuntu-latest
     steps:
-      - uses: kpk47/slsa-verifier/actions/installer@v0.0.13
-      - uses: kpk47/slsa-verifier/actions/installer@v0.0.14
       - uses: kpk47/slsa-verifier/actions/installer@v0.0.16
   test-hash:
     runs-on: ubuntu-latest
     steps:
-      - uses: kpk47/slsa-verifier/actions/installer@e130d6ed7712826d9adfcd7e6f8cdbb8fbec637a
-      - uses: kpk47/slsa-verifier/actions/installer@f41d083a3804298adc912edec200293bce37eacb
       - uses: kpk47/slsa-verifier/actions/installer@cc02596c345dd74109fb21c540fe31f076834888
