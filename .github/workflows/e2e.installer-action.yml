@@ -9,12 +9,12 @@ jobs:
   test-tags:
     runs-on: ubuntu-latest
     steps:
-      - uses: kpk47/slsa-verifier/actions/installer@v0.0.17
+      - uses: kpk47/slsa-verifier/actions/installer@v0.0.18
         with: 
           github-token: ${{ secrets.GITHUB_TOKEN }}
   test-hash:
     runs-on: ubuntu-latest
     steps:
-      - uses: kpk47/slsa-verifier/actions/installer@a53b192e5b6649594c6441bcf3ce70f871d4e1d5
+      - uses: kpk47/slsa-verifier/actions/installer@532af040baa96bf3c23bbe3b0e8fe3fd6b30a066
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
